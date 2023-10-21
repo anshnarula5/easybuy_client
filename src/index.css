@@ -1,0 +1,92 @@
+main {
+  min-height: 80vh;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: inherit;
+}
+
+h1 {
+  padding: 0.3rem;
+}
+
+.product-image {
+  height: 15rem;
+  object-fit: scale-down;
+}
+
+.carousel-image {
+  object-fit: cover;
+  width: 40rem;
+  height: 30rem
+}
+
+.caption-carousel {
+  display: none;
+}
+
+.filterModal {
+  display: none;
+}
+.btn-circle {
+  width: 30px;
+  height: 30px;
+  padding: 6px 0px;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.42857;
+}
+
+@media only screen and (min-width: 768px) {
+  .modalButton {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .modalButton{
+    display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .modalButton {
+    position: fixed;
+    bottom: 1rem;
+    right : 1rem;
+  
+  }
+  .productStatus{
+    margin-top: .5rem;
+  }
+  .filterModal {
+    display: inline-block;
+  }
+
+  .product-image {
+    object-fit: contain;
+  }
+
+  .carousel-image {
+    width: 100%;
+    max-height: 20rem;
+    object-fit: cover;
+  }
+
+  .caption-carousel {
+    display: inline;
+    color: black;
+  }
+
+  .hide,
+  .filter {
+    display: none;
+  }
+
+}
